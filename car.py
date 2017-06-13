@@ -1,4 +1,5 @@
-def __init__(self, name='General', model='GM' ,car_type='honda' ):
+class Car:
+    def __init__(self, name='General', model='GM' ,car_type='honda' ):
         self.car_type = car_type
         self.model = model
         self.name = name
@@ -16,12 +17,9 @@ def __init__(self, name='General', model='GM' ,car_type='honda' ):
 
     def doors(self, num_of_doors):
         if self.car_type == 'Porshe or Koenigsegg':
-            self,num_of_wheels = 2
+            self.num_of_wheels = 2
         else:
-            self,num_of_wheels = 4
-
-    def drive(self, moving_man):
-        return moving_man
+            self.num_of_wheels = 4
 
     def drive(self, spd):
         if self.car_type == 'trailer':
